@@ -11,7 +11,7 @@ const conf = {
     // online
     // serverHost: 'http://admin.happymmall.com'
     // dev
-    serverHost: '39.108.228.121:8080',
+    serverHost: '',
     imageHost: 'http://img.happymmall.com/',
 }
 
