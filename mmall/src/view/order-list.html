@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <%= require('html-loader!./layout/head-common.html')  %>
+    <!--<link rel=dns-prefetch href=//s.happymmall.com />-->
+    <!--<link rel=dns-prefetch href=//cdn.bootcss.com/ />-->
+    <script>var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?bc210cd22928076d28296716d9dfcf01";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script>
+    <title><%= htmlWebpackPlugin.options.title%> - happymmall电商平台</title>
+    <!--<link rel="shortcut icon" href="//s.happymmall.com/mmall_fe/dist/favicon.ico">-->
+    <!--<link href="/dist/css/common.css?91386be5dd8d4c17f958" rel="stylesheet">-->
+    <!--<link href="/dist/css/order-list.css?91386be5dd8d4c17f958" rel="stylesheet">-->
+</head>
+<body>
+<%= require('html-loader!./layout/nav.html')  %>
+<%= require('html-loader!./layout/header.html')  %>
+<div class="crumb">
+    <div class="w">
+        <div class="crumb-list">
+            <a href="./index.html" class="crumb-item">MMall</a>
+            <span>></span>
+            <span class="crumb-item">我的订单</span>
+        </div>
+    </div>
+</div>
+<div class="order-list-wrap w">
+    <div class="left-con"></div>
+    <div class="right-con">
+        <div class="panel">
+            <div class="panel-title">
+                我的订单
+            </div>
+            <div class="panel-body">
+                <div class="order-list">
+                    <div class="loading"></div>
+                </div>
+                <div class="pagination"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<%= require('html-loader!./layout/footer.html')  %>
+<!--<script type="text/javascript" src="/dist/js/order-list.js?91386be5dd8d4c17f958"></script>-->
+</body>
+</html>
