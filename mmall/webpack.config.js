@@ -37,6 +37,7 @@ var config = {
         'user-center-update': ['./src/page/user-center-update/index.js'],
         'user-pass-update'  : ['./src/page/user-pass-update/index.js'],
         'result'            : ['./src/page/result/index.js'],
+        'order'             : ['./src/page/order/order-list.js'],
     },
     output: {
         path: './dist',
@@ -82,6 +83,7 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('user-center-update', '修改个人信息')),
         new HtmlWebpackPlugin(getHtmlConfig('user-pass-update', '修改密码')),
         new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果')),
+        new HtmlWebpackPlugin(getHtmlConfig('order', '我的订单')),
     ]
 };
 
