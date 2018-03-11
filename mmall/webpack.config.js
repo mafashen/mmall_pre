@@ -31,7 +31,7 @@ var config = {
         'detail'            : ['./src/page/detail/index.js'],
         'cart'              : ['./src/page/cart/index.js'],
         'order-confirm'     : ['./src/page/order-confirm/index.js'],
-        'order-list'        : ['./src/page/order/index.js'],
+        'order-list'        : ['./src/page/order-list/index.js'],
         'user-login'        : ['./src/page/user-login/index.js'],
         'user-register'     : ['./src/page/user-register/index.js'],
         'user-pass-reset'   : ['./src/page/user-pass-reset/index.js'],
