@@ -30,7 +30,7 @@ var page = {
         });
 
         // 地址的添加
-        $(document).on('click', '.address-add', function(){
+        $(document).on('click', '.address-new', function(){
             addressModal.show({
                 isUpdate : false,
                 onSuccess : function(){
