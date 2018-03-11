@@ -22,15 +22,18 @@ var _order = {
         });
     },
 
-    // 检查登录状态
-    checkLogin : function(resolve, reject){
+    //获取订单列表
+    getOrderList : function (listParam , resolver, reject) {
         _mm.request({
-            url     : _mm.getServerUrl('/user/get_user_info.do'),
-            method  : 'POST',
-            success : resolve,
+            url     : _mm.getServerUrl('/order/list.do'),
+            data    : {
+                pageNum : listParam.pageNum,
+                pageSize : listParam.pageSize,
+            },
+            success : resolver,
             error   : reject
         });
-    },
+    }
 
 }
 module.exports = _order;
