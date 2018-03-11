@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <%= require('html-loader!./layout/head-common.html')  %>
+    <title><%= htmlWebpackPlugin.options.title%> - happymmall电商平台</title>
+<body>
+<%= require('html-loader!./layout/nav.html')  %>
+<%= require('html-loader!./layout/header.html')  %>
+<div class="crumb">
+    <div class="w">
+        <div class="crumb-list">
+            <a href="./index.html" class="crumb-item">MMall</a>
+            <span>></span>
+            <span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+        </div>
+    </div>
+</div>
+<div class="confirm-wrap w">
+    <div class="panel">
+        <h2 class="panel-title">收货地址</h2>
+        <div class="panel-body address-list">
+            <div class="loading"></div>
+        </div>
+    </div>
+    <div class="panel">
+        <h2 class="panel-title">商品清单</h2>
+        <div class="panel-body order-product">
+            <div class="loading"></div>
+        </div>
+    </div>
+</div>
+<%= require('html-loader!./layout/footer.html')  %>
+</body>
+</html>
