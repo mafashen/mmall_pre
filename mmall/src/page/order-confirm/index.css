@@ -52,7 +52,7 @@
 .confirm-wrap .panel .address-item.active{
     border:3px dashed #c60023
 }
-.confirm-wrap .panel .address-item.avtive .address-opera,.confirm-wrap .panel .address-item:hover .address-opera{
+.confirm-wrap .panel .address-item.active .address-opera,.confirm-wrap .panel .address-item:hover .address-opera{
     visibility:visible
 }
 .confirm-wrap .panel .pay-type{
@@ -103,12 +103,19 @@
     text-align:center
 }
 .modal{
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.4);
+    z-index: 1000;
     overflow-x:hidden;
     overflow-y:auto
 }
 .modal .modal-container{
     width:700px;
-    margin:50px auto;
+    margin:150px auto;
     background:#fff;
     border-radius:4px
 }
@@ -150,12 +157,12 @@
     outline:none;
     margin-right:10px
 }
-.form .form-btn{
-    margin-left:90px;
+.form .form-line .form-btn{
+    margin-left:95px;
     height:30px;
     line-height:30px;
     font-size:13px
 }
-.form .form-require{
+.form .form-required{
     color:red
 }

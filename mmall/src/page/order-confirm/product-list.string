@@ -1,11 +1,11 @@
     <table class="product-table" data-product-id="" data-checked="">
         <tbody>
             <tr>
-                <th width="10%">&nbsp;</th>
-                <th width="30%" align="left">商品描述</th>
-                <th width="20%" align="center">价格</th>
-                <th width="20%" align="center">数量</th>
-                <th width="20%" align="center">小计</th>
+                <th class="cell-img">&nbsp;</th>
+                <th class="cell-info">商品描述</th>
+                <th class="cell-price">价格</th>
+                <th class="cell-count">数量</th>
+                <th class="cell-total">小计</th>
             </tr>
             {{#orderItemVoList}}
             <tr>

@@ -24,5 +24,39 @@ var _address = {
             error   : reject
         });
     },
+
+    //修改地址
+    update : function(receiverInfo , resolve, reject){
+        _mm.request({
+            url     : _mm.getServerUrl('/shipping/update.do'),
+            data    : receiverInfo,
+            success : resolve,
+            error   : reject
+        });
+    },
+
+    //根据id获取收货地址详情
+    getAddress : function (shippingId, resolver, reject) {
+        _mm.request({
+            url     : _mm.getServerUrl('/shipping/select.do'),
+            data    : {
+                shippingId : shippingId
+            },
+            success : resolver,
+            error   : reject
+        });
+    },
+
+    //删除地址
+    deleteAddress : function (shippingId , resolver , reject) {
+        _mm.request({
+            url     : _mm.getServerUrl('/shipping/del.do'),
+            data    : {
+                shippingId : shippingId
+            },
+            success : resolver,
+            error   : reject
+        });
+    }
 }
 module.exports = _address;
