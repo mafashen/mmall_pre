@@ -33,7 +33,30 @@ var _order = {
             success : resolver,
             error   : reject
         });
-    }
+    },
 
+    //获取订单详情
+    getOrderDetail :function (orderNumber , resolver, reject) {
+        _mm.request({
+            url     : _mm.getServerUrl('/order/detail.do'),
+            data    : {
+                orderNo : orderNumber
+            },
+            success : resolver,
+            error   : reject
+        });
+    },
+
+    //取消订单
+    cancelOrder :function (orderNumber , resolver, reject) {
+        _mm.request({
+            url     : _mm.getServerUrl('/order/cancel.do'),
+            data    : {
+                orderNo : orderNumber
+            },
+            success : resolver,
+            error   : reject
+        });
+    },
 }
 module.exports = _order;

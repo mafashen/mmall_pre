@@ -1,0 +1,101 @@
+.left-con{
+    float:left;width:130px;min-height:100px
+}
+{
+    float:left;
+    width:950px
+}
+ .panel{
+    padding:10px;
+    margin-bottom:10px;
+    background:#fff
+}
+ .panel-title{
+    padding:10px;
+    font-size:14px;
+    border-bottom:1px solid #eee;
+    color:#666;
+    font-weight:700
+}
+ .panel-body{
+    padding:10px 0;
+    overflow:hidden
+}
+ .order-info{
+    padding:0 10px
+}
+ .order-info .text{
+    margin-right:20px;
+    height:30px;
+    line-height:30px
+}
+ .product-table.header{
+    background:#eee
+}
+ .product-table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fafafa
+}
+ .product-table .order-info{
+    background:#eee;
+    padding:10px
+}
+ .product-table .order-info .order-text{
+    margin-right:25px;
+    color:#999
+}
+ .product-table .order-info .link{
+    font-weight:700
+}
+ .order-list-cell{
+    color:#666;
+    border-bottom:1px solid #eee
+}
+ .product-table .cell-img{
+    width:10%;
+    padding:10px
+}
+ .product-table .cell-img .p-img{
+    width:80px;
+    height:80px;
+    border:1px solid #ddd
+}
+ .product-table .cell-info{
+    width:45%;
+    padding:0 10px;
+    text-align:left
+}
+ .product-table .cell-info .p-name{
+    line-height:18px
+}
+ .product-table .cell-count,
+ .product-table .cell-price,
+ .product-table .cell-total{
+    width:15%;
+    ext-align:center
+}
+ .total{
+    font-size:14px;
+    line-height:40px;
+    height:40px;
+    margin-top:10px;
+    margin-right:20px
+}
+ .err-tip{
+    padding:10px;
+    font-size:14px;
+    color:#f60;
+    background:#eee
+}
+.menu-item{
+    font-size:13px;
+    color:#666
+}
+.menu-item .link{
+    color:#777;
+    line-height:25px
+}
+.menu-item.active .link{
+    color:#c60023
+}

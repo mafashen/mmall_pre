@@ -13,7 +13,7 @@ var page = {
     data:{
       listParam:{
           pageNum   : 1,
-          pageSize  : 1,
+          pageSize  : 10,
       }
     },
     init: function(){
@@ -31,6 +31,7 @@ var page = {
         var _this           = this ,
             orderListHtml   = '',
             $listCon        = $('.order-list-con');
+        $listCon.html('<div class="loading"></div>')
         _order.getOrderList(this.data.listParam , function (res) {
             //渲染模板
             orderListHtml = _mm.renderHtml(templateIndex, res);
