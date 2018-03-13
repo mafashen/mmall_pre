@@ -44,7 +44,7 @@
                 <th class="cell cell-total">小计</th>
             </tr>
         </table>
-        {{#list}}
+
         <table class="order-list-table order-item">
             {{#orderItemVoList}}
             <tr>

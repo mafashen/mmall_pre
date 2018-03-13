@@ -29,49 +29,49 @@
     height:30px;
     line-height:30px
 }
- .product-table.header{
+ .order-list-table.header{
     background:#eee
 }
- .product-table{
+ .order-list-table{
     width:100%;
     border-collapse:collapse;
     background:#fafafa
 }
- .product-table .order-info{
+ .order-list-table .order-info{
     background:#eee;
     padding:10px
 }
- .product-table .order-info .order-text{
+ .order-list-table .order-info .order-text{
     margin-right:25px;
     color:#999
 }
- .product-table .order-info .link{
+ .order-list-table .order-info .link{
     font-weight:700
 }
  .order-list-cell{
     color:#666;
     border-bottom:1px solid #eee
 }
- .product-table .cell-img{
+ .order-list-table .cell-img{
     width:10%;
     padding:10px
 }
- .product-table .cell-img .p-img{
+ .order-list-table .cell-img .p-img{
     width:80px;
     height:80px;
     border:1px solid #ddd
 }
- .product-table .cell-info{
+ .order-list-table .cell-info{
     width:45%;
     padding:0 10px;
     text-align:left
 }
- .product-table .cell-info .p-name{
+ .order-list-table .cell-info .p-name{
     line-height:18px
 }
- .product-table .cell-count,
- .product-table .cell-price,
- .product-table .cell-total{
+ .order-list-table .cell-count,
+ .order-list-table .cell-price,
+ .order-list-table .cell-total{
     width:15%;
     ext-align:center
 }
@@ -82,6 +82,10 @@
     margin-top:10px;
     margin-right:20px
 }
+ .total-price{
+     font-weight: bold;
+     color:red;
+ }
  .err-tip{
     padding:10px;
     font-size:14px;

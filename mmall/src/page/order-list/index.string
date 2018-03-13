@@ -22,7 +22,7 @@
                 <span>订单总价:</span>
                 <span class="order-total">¥{{payment}}</span>
             </span>
-            <a class="link order-detail" href="./order-detail.html?orderNumber={{orderNo}}" target="_blank">查看详情></a>
+            <a class="link order-detail" href="./order-detail.html?orderNumber={{orderNo}}">查看详情></a>
         </td>
     </tr>
     {{#orderItemVoList}}
@@ -33,7 +33,7 @@
             </a>
         </td>
         <td class="cell cell-info">
-            <a class="link" href="./detail.html?productId={{productId}}" target="_blank">
+            <a class="link" href="./detail.html?productId={{productId}}">
                 {{productName}}
             </a>
         </td>
