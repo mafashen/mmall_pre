@@ -39,12 +39,12 @@ var page = {
     listenOrderStatus : function () {
         var _this = this;
         this.paymentTime = window.setInterval(function () {
-            _payment.getPaymentStatus(_this.data.orderNumber , function (res) {
-                if (res == true){
+            _payment.getPaymentStatus(_this.data.orderNumber, function (res) {
+                if (res == true) {
                     window.location.href = './result.html?type=payment&orderNumber=' + _this.data.orderNumber;
                 }
             })
-        })
+        }, 5000);
     }
 };
 $(function(){
