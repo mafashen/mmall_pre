@@ -7,6 +7,9 @@
                 <span class="text">创建时间:{{createTime}}</span>
             </div>
             <div class="text-line">
+                <span class="text">创建时间:{{createTime}}</span>
+            </div>
+            <div class="text-line">
                 <span class="text">
                     收件人:{{receiverName}}
                     {{receiverProvince}}
@@ -29,6 +32,11 @@
                 <a class="btn order-cancel">取消订单</a>
                 {{/isCancelable}}
             </div>
+            {{^needPay}}
+            <div class="text-line">
+                <span class="text">付款时间:{{paymentTime}}</span>
+            </div>
+            {{/needPay}}
         </div>
     </div>
 </div>
