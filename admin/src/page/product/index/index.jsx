@@ -86,7 +86,7 @@ const ProductList = React.createClass({
     },
     setProductStatus(productId, status){
         let currentStatus   = status,
-            newStatus       = currentStatus == 1 ? 2 : 1,
+            newStatus       = currentStatus == 1 ? 0 : 1,
             statusChangeTips= currentStatus == 1 ? '确认要下架该商品？' : '确认要上架该商品？';
         if(window.confirm(statusChangeTips)){
             _product.setProductStatus(productId, newStatus).then(res => {
