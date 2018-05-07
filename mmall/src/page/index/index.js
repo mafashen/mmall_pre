@@ -11,6 +11,7 @@ require('page/common/nav/index.js');
 require('page/common/header/index.js');
 require('util/slider/index.js');
 var navSide         = require('page/common/nav-side/index.js');
+var _product        = require('service/product-service.js');
 var templateBanner  = require('./banner.string');
 var _mm             = require('util/mm.js');
 
@@ -27,4 +28,6 @@ $(function() {
         var forward = $(this).hasClass('prev') ? 'prev' : 'next';
         $slider.data('unslider')[forward]();
     });
+
+
 });

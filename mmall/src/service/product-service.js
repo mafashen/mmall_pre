@@ -29,6 +29,15 @@ var _product = {
             success : resolve,
             error   : reject
         });
+    },
+
+    //获取所有分类
+    getCategoryTree:function (resolver, reject) {
+        _mm.request({
+            url     : _mm.getServerUrl('/product/get_all_category.do'),
+            success : resolver,
+            error   : reject
+        });
     }
 }
 module.exports = _product;
